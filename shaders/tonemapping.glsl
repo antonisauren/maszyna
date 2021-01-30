@@ -15,11 +15,11 @@ vec3 reinhard(vec3 x)
 // https://knarkowicz.wordpress.com/2016/01/06/aces-filmic-tone-mapping-curve/
 vec3 ACESFilm(vec3 x)
 {
-    float a = 2.51f;
+    float a = 1.5f;
     float b = 0.03f;
-    float c = 2.43f;
-    float d = 0.59f;
-    float e = 0.14f;
+    float c = 1.3f;
+    float d = 0.7f;
+    float e = 0.1f;
     return (x*(a*x+b))/(x*(c*x+d)+e);
 }
 
